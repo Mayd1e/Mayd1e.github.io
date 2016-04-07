@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Android中ListView异常cannot be cast to android.widget.HeaderViewListAdapter]]></title>
+      <url>http://www.lianyanshan.com/2016/04/06/Android%E4%B8%ADListView%E5%BC%82%E5%B8%B8cannot%20be%20cast%20to%20android.widget.HeaderViewListAdapter/</url>
+      <content type="html"><![CDATA[<center><h4>Android中ListView异常cannot be cast to android.widget.HeaderViewListAdapter</h4></center>
+
+<p>用listview设置header或footerview，通常发生该异常。</p>
+<p>如果你没有发生，那是碰巧。但是你可能不知道原因。</p>
+<a id="more"></a>
+<p>如果在listview.setAdapter（adapter）方法之后 添加头或尾view，</p>
+<p>即addHeaderView或 addFooterView，</p>
+<p>那么在你listView.removeHearderView或removeFooterView时就会报该异常。</p>
+<p>在Listview的源码中如果设置了adapter，那么它会强转成HeaderViewListAdapter，所以就会报错。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">if</span> (mAdapter != <span class="keyword">null</span> &amp;&amp; ((HeaderViewListAdapter) mAdapter).removeHeader(v)) &#123;</span><br><span class="line">	<span class="keyword">if</span> (mDataSetObserver != <span class="keyword">null</span>) &#123;</span><br><span class="line">		mDataSetObserver.onChanged();</span><br><span class="line">	&#125;</span><br><span class="line">	result = <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>所以你一定要在setAdapter之前调用addHeaderView或addFooterVeiw.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://www.lianyanshan.com/2016/04/05/hello-world/</url>
+      <content type="html"><![CDATA[<center><h3>Welcome to <a href="http://www.lianyanshan.com/">Morphine</a>!</h3> </center>]]></content>
+    </entry>
+    
+  
+  
+</search>
