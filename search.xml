@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title><![CDATA[Android Studio下百度地图定位162错误]]></title>
+      <url>http://www.lianyanshan.com/2016/04/12/Android%20Studio%E4%B8%8B%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE%E5%AE%9A%E4%BD%8D162%E9%94%99%E8%AF%AF/</url>
+      <content type="html"><![CDATA[<center><h4>Android Studio下百度地图定位162错误</h4></center>
+
+<p>今天给项目增加一个定位功能,使用百度地图定位sdk出现error code : 162的错误:</p>
+<pre><code>error code : 162
+latitude : 4.9E-324
+lontitude : 4.9E-324
+radius : 0.0
+locationdescribe : null 
+</code></pre><a id="more"></a>
+<p>官方解释:</p>
+<pre><code>162： 请求串密文解析失败，一般是由于客户端SO文件加载失败造成，请严格参照开发指南或demo开发，放入对应SO文件。 
+</code></pre><p>仔细看了下so都有放,目录也正确.百度找答案,找半天都是说so文件没放…</p>
+<p>后面仔细一想Android加载so库文件需要在build.gradle里加几句代码:</p>
+<pre><code>sourceSets {
+    main {
+        jniLibs.srcDirs = [&apos;libs&apos;]
+    }
+}
+</code></pre><p>好吧…问题解决了..</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Android中ListView异常cannot be cast to android.widget.HeaderViewListAdapter]]></title>
       <url>http://www.lianyanshan.com/2016/04/06/Android%E4%B8%ADListView%E5%BC%82%E5%B8%B8cannot%20be%20cast%20to%20android.widget.HeaderViewListAdapter/</url>
       <content type="html"><![CDATA[<center><h4>Android中ListView异常cannot be cast to android.widget.HeaderViewListAdapter</h4></center>
