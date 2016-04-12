@@ -9,22 +9,13 @@
       <content type="html"><![CDATA[<center><h4>Android Studio下百度地图定位162错误</h4></center>
 
 <p>今天给项目增加一个定位功能,使用百度地图定位sdk出现error code : 162的错误:</p>
-<pre><code>error code : 162
-latitude : 4.9E-324
-lontitude : 4.9E-324
-radius : 0.0
-locationdescribe : null 
-</code></pre><a id="more"></a>
-<p>官方解释:</p>
-<pre><code>162： 请求串密文解析失败，一般是由于客户端SO文件加载失败造成，请严格参照开发指南或demo开发，放入对应SO文件。 
-</code></pre><p>仔细看了下so都有放,目录也正确.百度找答案,找半天都是说so文件没放…</p>
+<a id="more"></a>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">error code : <span class="number">162</span></span><br><span class="line">latitude : <span class="number">4.9E-324</span></span><br><span class="line">lontitude : <span class="number">4.9E-324</span></span><br><span class="line">radius : <span class="number">0.0</span></span><br><span class="line">locationdescribe : <span class="keyword">null</span></span><br></pre></td></tr></table></figure>
+<p>官方解释:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">162</span>： 请求串密文解析失败，一般是由于客户端SO文件加载失败造成，请严格参照开发指南或demo开发，放入对应SO文件。</span><br></pre></td></tr></table></figure></p>
+<p>仔细看了下so都有放,目录也正确.百度找答案,找半天都是说so文件没放…</p>
 <p>后面仔细一想Android加载so库文件需要在build.gradle里加几句代码:</p>
-<pre><code>sourceSets {
-    main {
-        jniLibs.srcDirs = [&apos;libs&apos;]
-    }
-}
-</code></pre><p>好吧…问题解决了..</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sourceSets &#123;</span><br><span class="line">    main &#123;</span><br><span class="line">        jniLibs.srcDirs = [<span class="string">'libs'</span>]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>好吧…问题解决了..</p>
 ]]></content>
     </entry>
     
