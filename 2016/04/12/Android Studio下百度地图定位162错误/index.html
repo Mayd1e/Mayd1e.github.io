@@ -71,7 +71,7 @@
 
 今天给项目增加一个定位功能,使用百度地图定位sdk出现error code : 162的错误:
 12345error code : 162latitude : 4.9E-324lontitude : 4.9E-324radius : 0.0locationdescribe : null">
-<meta property="og:updated_time" content="2016-04-12T16:04:45.333Z">
+<meta property="og:updated_time" content="2016-04-14T16:47:15.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Studio下百度地图定位162错误">
 <meta name="twitter:description" content="Android Studio下百度地图定位162错误
@@ -329,7 +329,7 @@
 <a id="more"></a>
 <p>官方解释:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">162</span>： 请求串密文解析失败，一般是由于客户端SO文件加载失败造成，请严格参照开发指南或demo开发，放入对应SO文件。</span><br></pre></td></tr></table></figure></p>
 <p>仔细看了下so都有放,目录也正确.百度找答案,找半天都是说so文件没放…</p>
-<p>后面仔细一想Android加载so库文件需要在build.gradle里加几句代码:</p>
+<p>后面仔细一想,这个项目原来没有使用过JNI,而Android加载so库文件需要在build.gradle里加几句代码:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sourceSets &#123;</span><br><span class="line">    main &#123;</span><br><span class="line">        jniLibs.srcDirs = [<span class="string">'libs'</span>]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>好吧…问题解决了..</p>
 
@@ -378,6 +378,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/15/Android中代码模拟点击/" rel="prev" title="Android中使用代码模拟点击,触发点击事件.">
+                Android中使用代码模拟点击,触发点击事件. <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -449,7 +453,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -466,7 +470,7 @@
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
