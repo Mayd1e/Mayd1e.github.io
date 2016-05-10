@@ -4,6 +4,21 @@
   
     
     <entry>
+      <title><![CDATA[Android中PopupWindow显示后其余地方灰色透明的问题]]></title>
+      <url>http://www.lianyanshan.com/2016/05/10/Android%E4%B8%ADPopupWindow%E6%98%BE%E7%A4%BA%E5%90%8E%E5%85%B6%E4%BD%99%E5%9C%B0%E6%96%B9%E7%81%B0%E8%89%B2%E9%80%8F%E6%98%8E%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<center><h4>Android中PopupWindow显示后屏幕背景变成半透明不生效问题</h4></center>
+
+<p>首先是关于PopupWindow显示后屏幕背景变成半透明的方法:</p>
+<p>在PopupWindow显示的地方加上<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WindowManager.LayoutParams lp = getWindow().getAttributes();</span><br><span class="line">lp.alpha = <span class="number">0.4f</span></span><br><span class="line">getWindow().setAttributes(lp);</span><br></pre></td></tr></table></figure></p>
+<p>然后给PopupWindow设置setOnDismissListener监听<br>在监听的onDismiss()方法内加入<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** </span><br><span class="line">     * 弹出的popWin关闭的事件，主要是为了将背景透明度改回来 </span><br><span class="line">     * <span class="doctag">@author</span> cg </span><br><span class="line">     * </span><br><span class="line">     */</span>  </span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">poponDismissListener</span> <span class="keyword">implements</span> <span class="title">PopupWindow</span>.<span class="title">OnDismissListener</span></span>&#123;  </span><br><span class="line">  </span><br><span class="line">        <span class="meta">@Override</span>  </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onDismiss</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">            <span class="comment">// TODO Auto-generated method stub  </span></span><br><span class="line">            <span class="comment">//Log.v("Dismiss:", "我是关闭事件");  </span></span><br><span class="line">            WindowManager.LayoutParams lp = getWindow().getAttributes();</span><br><span class="line">            lp.alpha = <span class="number">1f</span></span><br><span class="line">            getWindow().setAttributes(lp); </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样当PopupWindow消失后界面会恢复原样;</p>
+<p>当加上这些之后如果发现不生效的话,再加上:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);</span><br></pre></td></tr></table></figure>
+<p>好吧…问题解决了..</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Android中使用代码模拟点击,触发点击事件.]]></title>
       <url>http://www.lianyanshan.com/2016/04/15/Android%E4%B8%AD%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%8B%9F%E7%82%B9%E5%87%BB/</url>
       <content type="html"><![CDATA[<center><h4>Android中使用代码模拟点击,触发点击事件</h4></center>

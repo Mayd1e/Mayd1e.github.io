@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Morphine's Blog ---- Android学习|安卓资料|android编程|javase|html5" />
+  <meta name="keywords" content="Android, 安卓, PopupWindow, 其余地方灰色透明" />
 
 
 
@@ -59,15 +59,28 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Morphine">
-<meta property="og:url" content="http://www.lianyanshan.com/archives/2016/04/index.html">
+<meta name="description" content="Android中PopupWindow显示后屏幕背景变成半透明不生效问题
+
+首先是关于PopupWindow显示后屏幕背景变成半透明的方法:
+在PopupWindow显示的地方加上123WindowManager.LayoutParams lp = getWindow().getAttributes();lp.alpha = 0.4fgetWindow().setAttributes(lp);
+然">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android中PopupWindow显示后其余地方灰色透明的问题">
+<meta property="og:url" content="http://www.lianyanshan.com/2016/05/10/Android中PopupWindow显示后其余地方灰色透明的问题/index.html">
 <meta property="og:site_name" content="Morphine">
-<meta property="og:description">
+<meta property="og:description" content="Android中PopupWindow显示后屏幕背景变成半透明不生效问题
+
+首先是关于PopupWindow显示后屏幕背景变成半透明的方法:
+在PopupWindow显示的地方加上123WindowManager.LayoutParams lp = getWindow().getAttributes();lp.alpha = 0.4fgetWindow().setAttributes(lp);
+然">
+<meta property="og:updated_time" content="2016-05-10T03:52:54.376Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Morphine">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Android中PopupWindow显示后其余地方灰色透明的问题">
+<meta name="twitter:description" content="Android中PopupWindow显示后屏幕背景变成半透明不生效问题
+
+首先是关于PopupWindow显示后屏幕背景变成半透明的方法:
+在PopupWindow显示的地方加上123WindowManager.LayoutParams lp = getWindow().getAttributes();lp.alpha = 0.4fgetWindow().setAttributes(lp);
+然">
 
 
 
@@ -85,7 +98,7 @@
   };
 </script>
 
-  <title> 归档 | Morphine </title>
+  <title> Android中PopupWindow显示后其余地方灰色透明的问题 | Morphine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -116,7 +129,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right  page-archive  ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,177 +230,168 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 5 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/15/Android中代码模拟点击/" itemprop="url">
-              
-                <span itemprop="name">Android中使用代码模拟点击,触发点击事件.</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-15T00:20:21+08:00"
-              content="2016-04-15" >
-          04-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/12/Android Studio下百度地图定位162错误/" itemprop="url">
-              
-                <span itemprop="name">Android Studio下百度地图定位162错误</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-12T23:31:12+08:00"
-              content="2016-04-12" >
-          04-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/06/Android中ListView异常cannot be cast to android.widget.HeaderViewListAdapter/" itemprop="url">
-              
-                <span itemprop="name">Android中ListView异常cannot be cast to android.widget.HeaderViewListAdapter</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-06T22:43:32+08:00"
-              content="2016-04-06" >
-          04-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/05/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-05T16:29:21+08:00"
-              content="2016-04-05" >
-          04-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android中PopupWindow显示后其余地方灰色透明的问题
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T11:41:12+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/Android中PopupWindow显示后其余地方灰色透明的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/Android中PopupWindow显示后其余地方灰色透明的问题/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+		  
+          
+          
+             <span id="/2016/05/10/Android中PopupWindow显示后其余地方灰色透明的问题/" class="leancloud_visitors" data-flag-title="Android中PopupWindow显示后其余地方灰色透明的问题">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <center><h4>Android中PopupWindow显示后屏幕背景变成半透明不生效问题</h4></center>
+
+<p>首先是关于PopupWindow显示后屏幕背景变成半透明的方法:</p>
+<p>在PopupWindow显示的地方加上<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WindowManager.LayoutParams lp = getWindow().getAttributes();</span><br><span class="line">lp.alpha = <span class="number">0.4f</span></span><br><span class="line">getWindow().setAttributes(lp);</span><br></pre></td></tr></table></figure></p>
+<p>然后给PopupWindow设置setOnDismissListener监听<br>在监听的onDismiss()方法内加入<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** </span><br><span class="line">     * 弹出的popWin关闭的事件，主要是为了将背景透明度改回来 </span><br><span class="line">     * <span class="doctag">@author</span> cg </span><br><span class="line">     * </span><br><span class="line">     */</span>  </span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">poponDismissListener</span> <span class="keyword">implements</span> <span class="title">PopupWindow</span>.<span class="title">OnDismissListener</span></span>&#123;  </span><br><span class="line">  </span><br><span class="line">        <span class="meta">@Override</span>  </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onDismiss</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">            <span class="comment">// TODO Auto-generated method stub  </span></span><br><span class="line">            <span class="comment">//Log.v("Dismiss:", "我是关闭事件");  </span></span><br><span class="line">            WindowManager.LayoutParams lp = getWindow().getAttributes();</span><br><span class="line">            lp.alpha = <span class="number">1f</span></span><br><span class="line">            getWindow().setAttributes(lp); </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样当PopupWindow消失后界面会恢复原样;</p>
+<p>当加上这些之后如果发现不生效的话,再加上:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);</span><br></pre></td></tr></table></figure>
+<p>好吧…问题解决了..</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/安卓/" rel="tag">#安卓</a>
+          
+            <a href="/tags/PopupWindow/" rel="tag">#PopupWindow</a>
+          
+            <a href="/tags/其余地方灰色透明/" rel="tag">#其余地方灰色透明</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/15/Android中代码模拟点击/" rel="next" title="Android中使用代码模拟点击,触发点击事件.">
+                <i class="fa fa-chevron-left"></i> Android中使用代码模拟点击,触发点击事件.
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -395,6 +399,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/10/Android中PopupWindow显示后其余地方灰色透明的问题/"
+           data-title="Android中PopupWindow显示后其余地方灰色透明的问题" data-url="http://www.lianyanshan.com/2016/05/10/Android中PopupWindow显示后其余地方灰色透明的问题/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -414,8 +426,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://chuantu.biz/t2/53/1459870021x3738746571.jpg"
@@ -513,6 +534,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Android中PopupWindow显示后屏幕背景变成半透明不生效问题</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -603,11 +635,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
 
 
   
