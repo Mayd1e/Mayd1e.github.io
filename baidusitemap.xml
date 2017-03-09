@@ -29,64 +29,6 @@
     </url>
 
     
-  <url>
-    <loc>http://www.lianyanshan.com/2016/04/12/Android%20Studio%E4%B8%8B%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE%E5%AE%9A%E4%BD%8D162%E9%94%99%E8%AF%AF/</loc>
-    <lastmod>2016-04-14T16:47:15.260Z</lastmod>
-    <data>
-        <display>
-        <title>Android Studio下百度地图定位162错误</title>
-        <pubTime>2016-04-12T15:31:12.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>安卓</tag>
-         
-        <tag>百度地图错误</tag>
-         
-        <tag>定位</tag>
-         
-        <tag>Android Studio</tag>
-         
-        <tag>加载so文件</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://www.lianyanshan.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.lianyanshan.com/2016/04/15/Android%E4%B8%AD%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%8B%9F%E7%82%B9%E5%87%BB/</loc>
-    <lastmod>2016-04-14T16:39:49.348Z</lastmod>
-    <data>
-        <display>
-        <title>Android中使用代码模拟点击,触发点击事件.</title>
-        <pubTime>2016-04-14T16:20:21.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-        <tag>安卓</tag>
-         
-        <tag>模拟点击</tag>
-         
-        <tag>触发事件</tag>
-         
-        <tag>点击事件</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://www.lianyanshan.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
   <url>
     <loc>http://www.lianyanshan.com/2016/04/06/Android%E4%B8%ADListView%E5%BC%82%E5%B8%B8cannot%20be%20cast%20to%20android.widget.HeaderViewListAdapter/</loc>
